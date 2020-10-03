@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Error 404</title>
+
+    <!--Fav and touch icons-->
+    <link rel="icon" th:href="@{/images/favicon.ico}">
+    <link rel="apple-touch-icon" th:href="@{/images/apple-touch-icon.png}">
+    <link rel="apple-touch-icon" sizes="76x76" th:href="@{/images/apple-touch-icon-76x76.png}">
+    <link rel="apple-touch-icon" sizes="120x120" th:href="@{/images/apple-touch-icon-120x120.png}">
+    <link rel="apple-touch-icon" sizes="152x152" th:href="@{/images/apple-touch-icon-152x152.png}">
+
+    <!--Common Styles Plugins-->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/bootstrap.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/font-awesome.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/animate.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/owl.carousel.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/owl.theme.default.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/jquery-ui.min.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/css/magnific-popup.css}">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+    <!--Custom Style-->
+    <link rel="stylesheet" type="text/css" th:href="@{/style.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/space.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/responsive.css}">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader-inner">
+            <div class="sk-folding-cube">
+                <div class="sk-cube1 sk-cube"></div>
+                <div class="sk-cube2 sk-cube"></div>
+                <div class="sk-cube4 sk-cube"></div>
+                <div class="sk-cube3 sk-cube"></div>
+            </div>
+        </div>
+    </div>
+    <!-- header -->
+    <div id="header--fixed" class="header">
+        <div class="nav-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6 col-md-5 col-lg-4">
+                        <div class="phone">
+                            <i class="fa fa-volume-control-phone"></i>+ 215 1256 845
+                        </div>
+                        <div class="email">
+                            <i class="fa fa-envelope"></i>info@becharity.com
+                        </div>
+                        <a th:href="@{/donation}" class="btn btn-red">Donate</a>
+                    </div>
+                    <div class="hidden-xs hidden-sm col-md-3 col-lg-4 ">
+                        <form class="top-search" action="#">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search">
+                                    <div class="input-group-addon">
+                                        <input type="submit" value="Search">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="hidden-xs col-sm-6 col-md-4 col-lg-4">
+                        <div class="social">
+                            <a class="icon-facebook" href="#"><i class="fa fa-facebook-square"></i></a>
+                            <a class="icon-twitter" href="#"><i class="fa fa-twitter-square"></i></a>
+                            <a class="icon-pinterest" href="#"><i class="fa fa-pinterest-square"></i></a>
+                            <a class="icon-google-plus" href="#"><i class="fa fa-google-plus-square"></i></a>
+                        </div>
+                        <a class="join-top" href="login"><i class="fa fa-user-circle"></i>JOIN</a>
+                        <div class="dropdown currency-switchr">
+                            <button class="currency-btn" id="currency" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-globe"></i>URO
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="currency">
+                                <li><a href="#">USD</a></li>
+                                <li><a href="#">AUD</a></li>
+                            </ul>
+                        </div>
+                        <div class="dropdown language-switchr">
+                            <button class="language-btn" id="language" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-globe"></i>ENG
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="language">
+                                <li><a href="#">SPN</a></li>
+                                <li><a href="#">GER</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-nav" class="main-nav">
+            <nav class="navbar navbar-default">
+                <div class="container">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-navbar" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="index"><img class="retina" th:src="@{/images/logo.png}" alt="logo"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="main-navbar">
+                        <ul class="nav navbar-nav navbar-left">
+                            <li><a th:href="@{/index}">Home</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li class="dropdown dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Cause</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a th:href="@{/cause}">Cause</a></li>
+                                            <li><a th:href="@{/cause-details}">Cause Details</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropdown dropdown-submenu">
+                                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">About</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a th:href="@{/about}">About</a></li>
+                                            <li><a th:href="@{/our-team}">Our Team</a></li>
+                                            <li><a th:href="@{/our-partner}">Our Pertnar</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a th:href="@{/faq}">FAQ</a></li>
+                                    <li><a th:href="@{/gallery}">Gallery</a></li>
+                                    <li><a th:href="@{/element}">Element</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Event <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a th:href="@{/event}">Event</a></li>
+                                    <li><a th:href="@{/event-details}">Event Details</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a th:href="@{/blog}">Blog</a></li>
+                                    <li><a th:href="@{/blog-2}">Blog 2</a></li>
+                                    <li><a th:href="@{/single-blog}">Single Blog</a></li>
+                                    <li><a th:href="@{/search-archive}">Search Archive</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Shop <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a th:href="@{/shop}">Shop</a></li>
+                                    <li><a th:href="@{/product}">Product</a></li>
+                                    <li><a th:href="@{/cart}">Cart</a></li>
+                                    <li><a th:href="@{/checkout}">Checkout</a></li>
+                                    <li><a th:href="@{/login}">Login</a></li>
+                                    <li><a th:href="@{/register}">Register</a></li>
+                                </ul>
+                            </li>
+                            <li><a th:href="@{/contact}">Contact</a></li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right hidden-xs">
+                            <li class="top-cart">
+                                <i class="fa fa-shopping-bag"></i>
+                                <a th:href="@{/cart}" class="top-amount">$0.00</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <!-- Page title -->
+    <div class="page-title-section" style="padding: 0">
+        <div class="page-title-wrap">
+            <div class="page-title-overlay"></div>
+            <div class="page-title-info">
+                <ol class="breadcrumb">
+                    <li><a href="#">Error</a></li>
+                    <li class="active">Not Found</li>
+                </ol>
+                <h1 class="page-title">Not Found</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- main content -->
+    <div class="error-section mg-top-100 mg-bottom-100">
+        <h2 class="error-title">404</h2>
+        <p>The page you locking for not found on our server</p>
+        <a class="btn" th:href="@{/index}">go to home</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer-section">
+        <div class="footer-top pd-top-80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 footer-widget">
+                        <div class="footer-logo">
+                            <img class="retina" th:src="@{/images/logo-footer.png}" alt="logo">
+                            <p>Lorem ipsum dolor sit amet, his ferri probatus neglegentur te, eum affert legere nominavi ad, eu enim semper dictas ius. Legimus delicata an sit. Sea ex nonumes molestie. Cu salutandi scribentur.</p>
+                            <div class="footer-social">
+                                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                                <a href="#"><i class="fa fa-vimeo-square"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 footer-widget">
+                        <div class="footer-address">
+                            <h3 class="footer-title">Office address</h3>
+                            <p>123 Imaginary Drive Danbury,
+                                <br> Connecticut, USA</p>
+                            <p>
+                                <i class="fa fa-phone"></i>555.555.1234
+                                <br>
+                                <i class="fa fa-envelope-o"></i>hello@example.com
+                            </p>
+                            <div class="footer-map">
+                                <a th:href="@{/contact}"><i class="fa fa-map-marker"></i>See in map</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 footer-widget">
+                        <h3 class="footer-title">Quick link</h3>
+                        <ul>
+                            <li><a href="#">Dolor sit amet, his ferri</a></li>
+                            <li><a href="#">probatus neglegentur te,</a></li>
+                            <li><a href="#">Affert legere nomina,</a></li>
+                            <li><a href="#">Enim semper dictas</a></li>
+                            <li><a href="#">Legimus delicata</a></li>
+                            <li><a href="#">Nonumes molestie.</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 footer-widget">
+                        <h3 class="footer-title">Anual reports</h3>
+                        <ul>
+                            <li><a href="#">Reports 2016</a></li>
+                            <li><a href="#">Commercial reports 2015,</a></li>
+                            <li><a href="#">Sales report November, 2016</a></li>
+                            <li><a href="#">Half yearly report Jan-Jun 2016</a></li>
+                            <li><a href="#">Financial report 2014</a></li>
+                            <li><a href="#">Technical report 2015</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span><a href="#">Tarms & Condition</a></span>
+                        <span>&copy; 2017 beCharity</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script th:src="@{/js/html5shiv.min.js}"></script>
+    <script th:src="@{/js/respond.min.js}"></script>
+    <![endif]-->
+
+    <!--Common JS Plugin-->
+    <script type="text/javascript" th:src="@{/js/jquery-1.12.4.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery-ui.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/bootstrap.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/retina.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.easing.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.scrollUp.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/owl.carousel.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/isotope.pkgd.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/imagesloaded.pkgd.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/headroom.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jQuery.headroom.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/sticky-kit.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.countdown.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.waypoints.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.magnific-popup.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.counterup.min.js}"></script>
+    <!-- Google Map -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYMloK_kzsasOQXg-xhGxnwvlAU3HTZWg&callback=initMap" async defer></script>
+    <!-- Custom JS -->
+    <script type="text/javascript" th:src="@{/js/custom.js}"></script>
+</body>
+</html>
