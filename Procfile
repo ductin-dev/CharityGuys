@@ -1,0 +1,1 @@
+web: java $JAVA_OPTS -jar out/webapp-runner.jar --port $PORT out/*.war

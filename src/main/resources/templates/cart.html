@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cart | beCharity HTML5 responsive charity theme</title>
+
+    <th:block th:insert="../common/_css.html"></th:block>
+</head>
+
+<body>
+    <!-- header -->
+    <th:block th:insert="../common/preloader.html"></th:block>
+    <th:block th:insert="../common/header.html"></th:block>
+
+    <!-- Page title -->
+    <div class="page-title-section">
+        <div class="page-title-wrap">
+            <div class="page-title-overlay"></div>
+            <div class="page-title-info">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Shopping Cart</li>
+                </ol>
+                <h1 class="page-title">Shopping Cart</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart section -->
+    <div class="cart-page pd-top-100 pd-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="cart-item">
+                        <div class="cart-thumbnail">
+                            <img src="images/shop/cart-1.jpg" alt="cart image">
+                        </div>
+                        <div class="cart-product">
+                            <h4 class="product-name">Color Pot</h4>
+                            <div class="product-price">
+                                <span>Price</span>
+                                <span>$521.00</span>
+                            </div>
+                            <div class="quantity">
+                                <span>Quantity</span>
+                                <input value="1" title="Qty" type="number">
+                            </div>
+                            <div class="product-subtotal">
+                                <span>Total</span>
+                                <span>$1042.00</span>
+                            </div>
+                            <div class="product-remove"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-thumbnail">
+                            <img src="images/shop/cart-2.jpg" alt="cart image">
+                        </div>
+                        <div class="cart-product">
+                            <h4 class="product-name">Extremes camera lens-Black</h4>
+                            <div class="product-price">
+                                <span>Price</span>
+                                <span>$521.00</span>
+                            </div>
+                            <div class="quantity">
+                                <span>Quantity</span>
+                                <input value="1" title="Qty" type="number">
+                            </div>
+                            <div class="product-subtotal">
+                                <span>Total</span>
+                                <span>$1042.00</span>
+                            </div>
+                            <div class="product-remove"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                        </div>
+                    </div>
+                    <div class="cart-item">
+                        <div class="cart-thumbnail">
+                            <img src="images/shop/cart-3.jpg" alt="cart image">
+                        </div>
+                        <div class="cart-product">
+                            <h4 class="product-name">Riceman dimond watch</h4>
+                            <div class="product-price">
+                                <span>Price</span>
+                                <span>$521.00</span>
+                            </div>
+                            <div class="quantity">
+                                <span>Quantity</span>
+                                <input value="1" title="Qty" type="number">
+                            </div>
+                            <div class="product-subtotal">
+                                <span>Total</span>
+                                <span>$1042.00</span>
+                            </div>
+                            <div class="product-remove"><a href="#"><i class="fa fa-times" aria-hidden="true"></i></a></div>
+                        </div>
+                    </div>
+                </div>
+                <div id="cart-sticky" class="col-sm-6">
+                    <div id="cart-box" class="cart-totals">
+                        <h3 class="cart-total-title">Card totals</h3>
+                        <div class="table-responsive cart-total-table">
+                            <table class="table">
+                                <tr>
+                                    <td>Sub total</td>
+                                    <td>$2510.00</td>
+                                </tr>
+                                <tr>
+                                    <td>Total</td>
+                                    <td>$2510.00</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <a class="btn" href="#">Proceed to checkout <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Clients -->
+    <div class="clients pd-top-80 pd-bottom-85" data-animation="fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="section-title">Our Client <i class="fa fa-user"></i></h2>
+                </div>
+                <div class="col-sm-12">
+                    <img src="images/partner/1.png" alt="client">
+                    <img src="images/partner/2.png" alt="client">
+                    <img src="images/partner/3.png" alt="client">
+                    <img src="images/partner/4.png" alt="client">
+                    <img src="images/partner/5.png" alt="client">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Call to action -->
+    <div class="call-to-action pd-top-80 pd-bottom-100">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2>Want to be a Volentaree?</h2>
+                    <p>Join With us fo Have any followers yet</p>
+                    <a class="btn btn-red mg-top-30" href="">Join Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <th:block th:insert="../common/footer.html"></th:block>
+    <th:block th:insert="../common/_js.html"></th:block>
+</body>
+
+</html>

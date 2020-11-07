@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<html lang="vi" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Charity | Donation</title>
+
+    <th:block th:insert="../common/_css.html"></th:block>
+
+</head>
+
+<body>
+
+    <th:block th:insert="../common/preloader.html"></th:block>
+    <th:block th:insert="../common/header.html"></th:block>
+
+    <!-- Page title -->
+    <div class="page-title-section">
+        <div class="page-title-wrap">
+            <div class="page-title-overlay"></div>
+            <div class="page-title-info">
+                <ol class="breadcrumb">
+                    <li><a href="#">Home</a></li>
+                    <li class="active">Page Title</li>
+                </ol>
+                <h1 class="page-title">Page Title</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- Donation Section -->
+    <div class="donation-section pd-top-100 pd-bottom-50">
+        <div class="container">
+            <div class="row">
+                <div class="donate-cause-list col-sm-6">
+                    <div class="related-cause equal-height-wrap">
+                        <div class="related-cause-img equal-height-inner">
+                            <img src="images/donation/1.jpg" alt="donate image">
+                        </div>
+                        <div class="related-cause-content equal-height-inner">
+                            <h4 class="related-cause-title">Contrary to popular text roots in a piece.</h4>
+                            <div class="fund-progress">
+                                <div class="media">
+                                    <div class="media-left">69%</div>
+                                    <div class="media-body">
+                                        <div class="x-fundline">
+                                            <div class="x-fill" style="width: 69%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn mg-top-20" href="">Detail</a>
+                        </div>
+                    </div>
+                    <div class="related-cause equal-height-wrap">
+                        <div class="related-cause-img equal-height-inner">
+                            <img src="images/donation/2.jpg" alt="donate image">
+                        </div>
+                        <div class="related-cause-content equal-height-inner">
+                            <h4 class="related-cause-title">Standard chunk of used since the 1500s below for interested.</h4>
+                            <div class="fund-progress">
+                                <div class="media">
+                                    <div class="media-left">46%</div>
+                                    <div class="media-body">
+                                        <div class="x-fundline">
+                                            <div class="x-fill" style="width: 46%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn mg-top-20" href="">Detail</a>
+                        </div>
+                    </div>
+                    <div class="related-cause equal-height-wrap">
+                        <div class="related-cause-img equal-height-inner">
+                            <img src="images/donation/3.jpg" alt="donate image">
+                        </div>
+                        <div class="related-cause-content equal-height-inner">
+                            <h4 class="related-cause-title">Standard chunk of used since the 1500s below for interested.</h4>
+                            <div class="fund-progress">
+                                <div class="media">
+                                    <div class="media-left">75%</div>
+                                    <div class="media-body">
+                                        <div class="x-fundline">
+                                            <div class="x-fill" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="btn mg-top-20" href="">Detail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mg-bottom-50">
+                    <div class="billing-address">
+                        <h3 class="address-header">Donate using card</h3>
+                        <form id="contact-form" class="contact-address" action="#" method="POST">
+                            <p class="address-title">Currency</p>
+                            <select class="country">
+                                <option placeholder="select you country">United State Dollar</option>
+                                <option>United State Dollar</option>
+                                <option>United State Dollar</option>
+                                <option>United State Dollar</option>
+                            </select>
+                            <p class="address-title">Your details</p>
+                            <input id="name" class="input" type="text" placeholder="First name" />
+                            <input id="email" class="input no-btop" type="text" placeholder="Last name" />
+                            <input id="email" class="input no-btop" type="text" placeholder="Company name (optional)" />
+                            <input id="email" class="input no-btop" type="text" placeholder="Email address" />
+                            <input id="email" class="input no-btop" type="text" placeholder="Phone number" />
+                            <p class="address-title">Country</p>
+                            <select class="country">
+                                <option placeholder="select you country">Bangladesh</option>
+                                <option>pakistan</option>
+                                <option>India</option>
+                                <option>Belgium</option>
+                            </select>
+                            <p class="address-title">Card details</p>
+                            <input id="name" class="input" type="text" placeholder="Card number" />
+                            <input id="name no-btop" class="input no-btop" type="text" placeholder="Street address" />
+                            <input id="name" class="input no-btop" type="text" placeholder="DD/MM" />
+                            <div class="address-check">
+                                <input type="checkbox" class="input" id="Agree" />
+                                <label class="address-title" for="Agree">Terms & Condition</label>
+                            </div>
+                            <a class="btn" href="#">DONATE NOW</a>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <th:block th:insert="../common/footer.html"></th:block>
+    <th:block th:insert="../common/_js.html"></th:block>
+</body>
+
+</html>
